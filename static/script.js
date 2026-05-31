@@ -92,3 +92,10 @@ if (typeof $ !== 'undefined' && $.fn.slick) {
     ]
   });
 }
+
+fetch('https://joiceoliveirapsico.com.br/blog/wp-json/joice/v1/latest-two')
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById('latest-two').innerHTML = html;
+  })
+  .catch(err => console.error('Erro ao carregar artigos:', err));

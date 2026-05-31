@@ -346,6 +346,37 @@ textarea{
     transition: .3s;
 }
 
+#blog-carousel .card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 250px; /* altura fixa */
+  object-fit: cover; /* corta e centraliza */
+  border-radius: 8px 8px 0 0;
+}
+
+#blog-carousel .card:hover {
+  transform: translateY(-5px);
+}
+#blog-carousel .card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+#blog-carousel .card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+#blog-carousel .btn-primary {
+  background-color: #3b4b6b;
+  border: none;
+}
+
+
 /* Animação */
 
 [data-anime]{
